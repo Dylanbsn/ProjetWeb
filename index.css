@@ -1,0 +1,633 @@
+html, body {
+    height: 100%;
+    background-color: #ffffff;
+}
+
+
+
+@media screen and (min-device-width: 800px) {
+    header #header {
+        height: 100px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row;
+    }
+    header #header .right-side {
+        width: auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+    }
+    header #header .left-side {
+        width: auto;
+    }
+    header #header .right-side img {
+        width: 30px;
+        margin-right: 25px;
+    }
+    header #header .left-side img {
+        width: 80px;
+        margin-left: 25px;
+        margin-right : 900px;
+    }
+    header #header .right-side .reseaux {
+        display: flex;
+        align-items: center;
+        margin-right: 90px;
+    }
+    header #header .right-side .menu {
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+    }
+    header #header .right-side .OurNumber p {
+        font-weight: bolder;
+        font-size: 20px;
+        margin-right: 200px;
+        white-space: nowrap;
+    }
+    header #header .right-side .menu p {
+        margin-right: 5px;
+    }
+    #previous,
+    #next {
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+        position: absolute;
+        font-size: 100px;
+        color: rgba(220, 220, 220, 0.8);
+        padding: 10px;
+    }
+    #slider {
+        position: relative;
+        width: 1200px;
+        overflow: hidden;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    #slider img{
+        height: 720px;
+        width: 1280px;
+    }
+    #previous {
+        left: 0;
+    }
+    #next {
+        right: 0;
+    }
+    #slider:hover #previous,
+    #slider:hover #next {
+        opacity: 1;
+    }
+    main #bloc1 {
+        display: flex;
+        flex-direction: row;
+        max-height: 1000px;
+        max-width: 1400px;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    main #bloc1 .left-side {
+        width: 50%;
+    }
+    main #bloc1 .left-side h2 {
+        font-size: 50px;
+    }
+    main #bloc1 .left-side h3 {
+        font-size: 20px;
+        color: #bbcf13;
+    }
+    main #bloc1 .left-side p {
+        font-size: 15px;
+    }
+    main #bloc1 .left-side .experience {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    main #bloc1 .left-side .experience h1 {
+        font-size: 85px;
+        z-index: 2;
+        font-weight: bold;
+    }
+    main #bloc1 .left-side .experience p {
+        font-size: 20px;
+        width: 60px;
+    }
+    main #bloc1 .left-side .experience svg {
+        position: absolute;
+        fill: transparent;
+        stroke: #bbcf13;
+        stroke-width: 3;
+        z-index: 1;
+    }
+    main #bloc1 .right-side {
+        width: 50%;
+    }
+    main #bloc1 .right-side img[alt*="point"] {
+        position: absolute;
+        z-index: 1;
+        width: 500px;
+        margin-top: 350px;
+    }
+    main #bloc1 .right-side img[alt*="villa"] {
+        position: relative;
+        z-index: 2;
+        margin-left: 10%;
+    }
+    main #bloc2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    main #bloc2 .titre {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    main #bloc2 .titre .text h1 {
+        font-size: 50px;
+    }
+    main #bloc2 .titre .showroom {
+        display: flex;
+        flex-direction: row;
+    }
+    main #bloc2 .titre .showroom p {
+        margin-right: 50px;
+    }
+    main #bloc2 .infos {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    main #bloc2 .bloctexte h2 {
+        color: white;
+        font-size: 40px;
+        position: absolute;
+        margin-left: 10px;
+        font-weight: bold;
+        width: 100px;
+        top: 40%;
+        transition-duration: 200ms;
+    }
+    main #bloc2 .bloctexte {
+        position: relative;
+        transition-duration: 200ms;
+    }
+    main #bloc2 .bloctexte p {
+        color: black;
+        font-size: 20px;
+        position: absolute;
+        margin-left: 10px;
+        font-weight: bold;
+        top: 280px;
+        opacity: 0%;
+        transition-duration: 200ms;
+    }
+    main #bloc2 .bloctexte h3 {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        margin-left: 10px;
+        font-weight: bold;
+        top: 545px;
+        transition-duration: 200ms;
+    }
+    main #bloc2 .bloctexte:hover img {
+        opacity: 25%;
+        transition-duration: 200ms;
+    }
+    main #bloc2 .bloctexte:hover p {
+        opacity: 100%;
+        transition-duration: 200ms;
+    }
+    main #bloc2 .bloctexte:hover h2 {
+        color: black;
+        top: 10px;
+        transition-duration: 200ms;
+    }
+    main #bloc2 .bloctexte:hover {
+        background-color: #bbcf13;
+    }
+    main #bloc2 .bloctexte:hover h3 {
+        color: black;
+        transition-duration: 200ms;
+    }
+    main #bloc3 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1200px;
+    }
+    main #bloc3 .titre {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    main #bloc3 svg {
+        fill: transparent;
+        stroke: #bbcf13;
+        stroke-width: 5;
+        position: absolute;
+        height: 300px;
+    }
+    main #bloc3 .bloctexte {
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+        height: 300px;
+    }
+    main #bloc3 .infos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    main #bloc3 .contenuallbloc {
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 88%;
+    }
+    main #bloc3 .contenuallbloc h5 {
+        color: #90908e;
+    }
+    main #bloc3 .contenuallbloc h6 {
+        color: #bbcf13;
+        font-size: 15px;
+    }
+    main #bloc3 .contenuallbloc h3 {
+        font-size: 20px;
+    }
+    main #bloc3 .contenuallbloc p {
+        font-size: 13px;
+    }
+    }
+    footer {
+        margin-top: 50px;
+        width: 100%;
+        height: 300px;
+    }
+    footer svg {
+        width: 80%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f1f1f1;
+        height: 5px;
+    }
+    footer #droits {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+    footer img[alt*=logo] {
+        width: 150px;
+        height: 150px;
+    }
+    footer img[alt*=res] {
+        width: 25px;
+        height: 25px;
+    }
+    footer #droits .reseauxfooter {
+        width: 150px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+@media screen and (max-device-width: 800px) {
+    header #header {
+        height: 100px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    header #header .right-side {
+        width: auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+    }
+    header #header .right-side img {
+        width: 30px;
+        margin-right: 25px;
+    }
+    header #header .right-side .OurNumber p {
+        font-size: 15px;
+        margin-right: 20px;
+        white-space: nowrap;
+    }
+    header #header .left-side img {
+        width: 80px;
+        margin-left: 25px;
+    }
+    header #header .left-side {
+        width: auto;
+    }
+    header #header .right-side .reseaux {
+        display: flex;
+        align-items: center;
+    }
+    header #header .right-side .menu {
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+    }
+    header #header .right-side .menu p {
+        margin-right: 5px;
+    }
+    #slider {
+        position: relative;
+        width: 80%;
+        overflow: hidden;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        object-fit: cover
+    }
+    #slider img{
+        height: 310px;
+        width: 720px;
+    }
+    #previous,
+    #next {
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+        position: absolute;
+        font-size: 100px;
+        color: rgba(220, 220, 220, 0.8);
+        padding: 10px;
+    }
+    #next {
+        right: 0;
+    }
+    #previous {
+        left: 0;
+    }
+    #slider:hover #previous,
+    #slider:hover #next {
+        opacity: 1;
+    }
+    main #bloc1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    main #bloc1 .left-side h3 {
+        font-size: 15px;
+        color: #bbcf13;
+    }
+    main #bloc1 .left-side {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    main #bloc1 .left-side p {
+        font-size: 15px;
+    }
+    main #bloc1 .left-side h2 {
+        font-size: 40px;
+    }
+    main #bloc1 .left-side .experience {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    main #bloc1 .left-side .experience p {
+        font-size: 20px;
+        width: 60px;
+    }
+    main #bloc1 .left-side .experience h1 {
+        font-size: 85px;
+        z-index: 2;
+        font-weight: bold;
+    }
+    main #bloc1 .left-side .experience svg {
+        position: absolute;
+        fill: transparent;
+        stroke: #bbcf13;
+        stroke-width: 5;
+        z-index: 1;
+    }
+    main #bloc1 .right-side img[alt*="villa"] {
+        position: relative;
+        z-index: 2;
+        margin-left: 10%;
+    }
+    main #bloc1 .right-side {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    main #bloc1 .right-side img[alt*="point"] {
+        position: absolute;
+        z-index: 1;
+        width: 400px;
+        margin-top: 300px;
+    }
+    main #bloc2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    main #bloc2 .titre {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    main #bloc2 .titre .text h1 {
+        font-size: 30px;
+    }
+    main #bloc2 .titre .showroom {
+        display: flex;
+        flex-direction: row;
+    }
+    main #bloc2 .infos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    main #bloc2 .titre .showroom p {
+        margin-right: 15px;
+        font-size: 10px;
+    }
+    main #bloc2 .bloctexte {
+        position: relative;
+        transition-duration: 200ms;
+    }
+    main #bloc2 .bloctexte h3 {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        margin-left: 10px;
+        font-weight: bold;
+        top: 570px;
+        transition-duration: 200ms;
+    }
+    main #bloc2 .bloctexte h2 {
+        color: white;
+        font-size: 40px;
+        position: absolute;
+        margin-left: 10px;
+        font-weight: bold;
+        width: 100px;
+        top: 40%;
+        transition-duration: 200ms;
+    }
+    main #bloc2 .bloctexte:hover p {
+        opacity: 100%;
+        transition-duration: 200ms;
+    }
+    main #bloc2 .bloctexte p {
+        color: black;
+        font-size: 20px;
+        position: absolute;
+        margin-left: 10px;
+        font-weight: bold;
+        top: 280px;
+        opacity: 0%;
+        transition-duration: 200ms;
+    }
+    main #bloc2 .bloctexte:hover img {
+        opacity: 25%;
+        transition-duration: 200ms;
+    }
+    main #bloc2 .bloctexte:hover h3 {
+        color: black;
+        transition-duration: 200ms;
+    }
+    main #bloc2 .bloctexte:hover {
+        background-color: #bbcf13;
+    }
+    main #bloc2 .bloctexte:hover h2 {
+        color: black;
+        top: 10px;
+        transition-duration: 200ms;
+    }
+    main #bloc3 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main #bloc3 .bloctexte {
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+        height: 300px;
+        margin-bottom: 25px;
+    }
+    main #bloc3 .infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    main #bloc3 .titre {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main #bloc3 svg {
+        fill: transparent;
+        stroke: #bbcf13;
+        stroke-width: 5;
+        position: absolute;
+        height: 300px;
+    }
+    main #bloc3 .contenuallbloc {
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+    main #bloc3 .contenuallbloc h3 {
+        font-size: 20px;
+    }
+    main #bloc3 .contenuallbloc h5 {
+        color: #90908e;
+    }
+    main #bloc3 .contenuallbloc p {
+        font-size: 13px;
+    }
+    main #bloc3 .contenuallbloc h6 {
+        color: #bbcf13;
+        font-size: 15px;
+    }
+    footer {
+        margin-top: 50px;
+        width: 100%;
+    }
+    footer svg {
+        width: 80%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f1f1f1;
+        height: 5px;
+    }
+    footer #droits {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    footer #droits .bloctexte {
+        margin-top: 25px;
+        text-align: center;
+    }
+    footer img[alt*=res] {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 10px;
+    }
+    footer img[alt*=logo] {
+        width: 50px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer #droits .reseauxfooter {
+        width: 200px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-evenly;
+    }
+}
